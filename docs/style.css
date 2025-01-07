@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(../assets/src/animations.css);
+
+
+:root{
+    --text-font: "Montserrat";
+    --titles-links-font: "Poppins";
+
+    --card-border-radious: 12px;
+    --border-radious-1: 10px;
+    --border-radious-2: 6px;
+    --header-border-radious: 0 0 30px 30px;
+
+    --main-padding: 10px 20px 0px 20px;
+    --icon-padding: 4px;
+
+    --box-shadow-1: 0 0.8rem 1rem rgba(0, 0, 0, 0.4);
+    --box-shadow-2: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    --text-shadow-light: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+    --body-background: #001F3F;
+    --background-variant: #0C2D4D;
+    --header-footer-background: #2f5574;
+    --color-primary: #a3bdcc;
+    --color-winning: #ffd700;
+    --color-white: #f3f1f2;
+    --color-dark: #181a1e;
+    --color-dark-variant: #202528;
+    --color-1: #9FB6AD;
+    --color-2: #688594;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    animation: fadeInAnimation ease 3s;
+    background: var(--body-background);
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--titles-links-font);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+h2{
+    font-size: 42px;
+    font-family: var(--titles-links-font);
+    font-weight: 700;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--text-font);
+}
+
+p{
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header{
+    display: flex;
+    border-radius: var(--header-border-radious);
+    background: var(--header-footer-background);
+    padding: 20px 20px 14px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header .logo > i{
+    color: var(--color-white);
+    font-size: 24px;
+    border: 1px solid var(--color-white);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.header .logo > a{
+    color: var(--color-white);
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header .navbar .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar .item > a{
+    color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.header .navbar .item > a:hover{
+    color: var(--color-2);
+}
+
+.header .navbar .item .active{
+    color: var(--color-2);
+}
+
+.header .user{
+    display: flex;
+    background: var(--color-2);
+    align-items: center;
+    padding: 4px 8px 4px 5px;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header .user > i{
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+.header .user .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header .user .info > img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.header .user .info .user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+}
+
+.header .user .info .user-info > a{
+    color: var(--color-white);
+}
+
+.header .user .info .user-info > p{
+    font-size: 13px;
+    color: var(--color-primary);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 40px 0;
+    padding: var(--main-padding);
+    gap: 70px;
+}
+
+.main-content .top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 350px;
+    background: url(/assets/Pictures/Spider.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: var(--card-border-radious);
+    padding: 50px 0 20px 0;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.main-content .top-section:hover,
+.main-content .bottom-section:hover{
+    box-shadow: none;
+}
+
+.main-content .top-section > button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--border-radious-1);
+    background: var(--color-winning);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-2);
+    color: var(--color-dark);
+    font-weight: 400;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    animation: pulsing 2s infinite ease-in-out;
+}
+
+
+.main-content .top-section > button > i,
+.main-content .bottom-section .left > button > i{
+    font-size: 20px;
+}
+
+.main-content .top-section > button:hover,
+.main-content .bottom-section .left > button:hover{
+    box-shadow: none;
+}
+
+.main-content .top-section .status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radious-1);
+    text-align: center;
+    padding: 15px 20px;
+    max-width: 90%;
+}
+
+.main-content .top-section .status > h2,
+.main-content .top-section .status > h4{
+    color: var(--color-white);
+    margin: 10px 0;
+}
+
+.main-content .bottom-section{
+    background: var(--background-variant);
+    border-radius: var(--card-border-radious);
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between; 
+    gap: 10px;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.3s ease;
+}
+
+.main-content .bottom-section .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px 20px 10px;
+    /*border: 1px solid #fff;*/
+}
+
+.main-content .bottom-section .left > h2{
+    color: var(--color-white);
+}
+
+.main-content .bottom-section .left > button{
+    background: var(--color-winning);
+    width: 15rem;
+    padding: 15px 10px;
+    border-radius: var(--border-radious-1);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-2);
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .bottom-section .left .status{
+    line-height: 30px;
+    padding: 10px ;
+    display: flex;
+    margin: 0 30px 0 0;
+    text-align: left;
+}
+
+.main-content .bottom-section .left .status > h4{
+    color: var(--color-1);
+}
+.main-content .bottom-section .right > img{
+    width: 300px;
+    height: 300px;
+}
+
+.contacts{
+    background: var(--header-footer-background);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px 20px 4px 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.contacts .liedson-contacts,
+.contacts .tiago-contacts{
+    background: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: var(--border-radious-2);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.contacts .liedson-contacts > p,
+.contacts .tiago-contacts > p{
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.contacts .liedson-contacts .social,
+.contacts .tiago-contacts .social{
+    /*border: 1px solid var(--color-dark);*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts .liedson-contacts .social > a,
+.contacts .tiago-contacts .social > a{
+    border: 1px solid var(--color-dark);
+    padding: var(--icon-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radious-2);
+    background: var(--color-primary);
+    box-shadow: var(--box-shadow-2);
+    transition: all 0.3s ease;
+    font-size: 20px;
+    color: var(--color-dark);
+}
+
+.contacts .liedson-contacts .social > a:hover,
+.contacts .tiago-contacts .social > a:hover{
+    color: var(--color-primary);
+    background: var(--body-background);
+    box-shadow: none;
+}
+
+.contacts .logo-uta{
+    background: var(--background-variant);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radious-1);
+    box-shadow: var(--box-shadow-2);
+    transition: all 0.3s ease;
+}
+
+.contacts .logo-uta:hover{
+    box-shadow: none;
+}
+.contacts .logo-uta > a > img{
+    width: 300px;
+}
+
+.contacts .autor-rights{
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: 14px;
+    color: var(--color-1);
+}
