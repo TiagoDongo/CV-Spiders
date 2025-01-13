@@ -168,7 +168,7 @@ p{
     justify-content: center;
     gap: 30px;
     height: 350px;
-    background: url(/assets/Pictures/image-0.jpg) no-repeat center center;
+    background: url(images/image-0.jpg) no-repeat center center;
     background-size: cover;
     border-radius: var(--card-border-radious);
     padding: 50px 0 20px 0;
