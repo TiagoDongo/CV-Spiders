@@ -42,11 +42,6 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](./LIC
 
 ## 👥 Autores
 
-<a href="https://github.com/LiedsonDelgado">
-  <img src="https://avatars.githubusercontent.com/LiedsonDelgado?s=100" alt="Liedson Delgado" style="width: 60px; height: 60px; border-radius: 50%;">
+<a href="https://github.com/TiagoDongo/CV-Spiders/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=TiagoDongo/CV-Spiders" alt="Contribuidores do repositório CV-Spiders" />
 </a>
-&nbsp;
-<a href="https://github.com/TiagoDongo">
-  <img src="https://avatars.githubusercontent.com/TiagoDongo?s=100" alt="Tiago Dongo" style="width: 60px; height: 60px; border-radius: 50%;">
-</a>
-
