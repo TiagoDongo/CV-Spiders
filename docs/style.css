@@ -129,45 +129,29 @@ p{
     color: var(--color-2);
 }
 
-.header .btn-links{
+
+.header .btn-actions{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+}
+
+.header .btn-actions .get-started,
+.header .btn-actions .login{
+    background: var(--color-winning);
+    padding: 10px 20px;
+    border-radius: var(--border-radious-1);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-2);
+    color: var(--color-dark);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
     border-radius: 50px;
 }
 
-.header .btn-links .btn-redirection,
-.header .btn-links .signin{
-    padding: 6px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: var(--border-radious-2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6px;
-    background: var(--color-1);
-    transition: all 0.3s ease;
-}
-
-.header .btn-links .btn-redirection:hover,
-.header .btn-links .signin:hover{
-    transform: scale(1.03);
-    background: var(--color-winning);
-}
-
-.header .btn-links .btn-redirection > i,
-.header .btn-links .signin > i{
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.header .btn-links .btn-redirection > span,
-.header .btn-links .signin > span{
-    font-size: 13px;
-    font-weight: 500;
-}
 
 .main-content{
     display: flex;
@@ -184,7 +168,7 @@ p{
     justify-content: center;
     gap: 30px;
     height: 350px;
-    background: url(/assets/Pictures/Spider.jpg) no-repeat center center;
+    background: url(/assets/Pictures/image-0.jpg) no-repeat center center;
     background-size: cover;
     border-radius: var(--card-border-radious);
     padding: 50px 0 20px 0;
@@ -193,7 +177,9 @@ p{
 }
 
 .main-content .top-section:hover,
-.main-content .bottom-section:hover{
+.main-content .bottom-section:hover,
+.header .btn-actions .get-started,
+.header .btn-actions .login{
     box-shadow: none;
 }
 
