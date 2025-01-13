@@ -129,50 +129,25 @@ p{
     color: var(--color-2);
 }
 
-.header .user{
+.header .btn-actions{
     display: flex;
-    background: var(--color-2);
     align-items: center;
-    padding: 4px 8px 4px 5px;
     justify-content: space-between;
     gap: 10px;
-    border-radius: 50px;
+}
+
+.header .btn-actions .get-started,
+.header .btn-actions .login{
+    background: var(--color-winning);
+    padding: 10px 20px;
+    border-radius: var(--border-radious-1);
     cursor: pointer;
-}
-
-.header .user > i{
-    color: var(--color-white);
-    font-size: 13px;
-}
-
-.header .user .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.header .user .info > img{
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-}
-
-.header .user .info .user-info{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 6px;
-}
-
-.header .user .info .user-info > a{
-    color: var(--color-white);
-}
-
-.header .user .info .user-info > p{
-    font-size: 13px;
-    color: var(--color-primary);
+    box-shadow: var(--box-shadow-2);
+    color: var(--color-dark);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
 }
 
 .main-content{
@@ -190,7 +165,7 @@ p{
     justify-content: center;
     gap: 30px;
     height: 350px;
-    background: url(/assets/Pictures/Spider.jpg) no-repeat center center;
+    background: url(/assets/Pictures/image-0.jpg) no-repeat center center;
     background-size: cover;
     border-radius: var(--card-border-radious);
     padding: 50px 0 20px 0;
@@ -199,7 +174,9 @@ p{
 }
 
 .main-content .top-section:hover,
-.main-content .bottom-section:hover{
+.main-content .bottom-section:hover,
+.header .btn-actions .get-started,
+.header .btn-actions .login{
     box-shadow: none;
 }
 
