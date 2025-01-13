@@ -129,6 +129,7 @@ p{
     color: var(--color-2);
 }
 
+
 .header .btn-actions{
     display: flex;
     align-items: center;
@@ -148,7 +149,9 @@ p{
     font-size: 14px;
     font-weight: 500;
     border: none;
+    border-radius: 50px;
 }
+
 
 .main-content{
     display: flex;
