@@ -3,62 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/src/animations.css">
+    <link rel="stylesheet" href="style.css">
     <title>CV Spiders-Login</title>
 </head>
-<link rel="stylesheet" href="style.css">
-
 <body>
-<div class="main-box">
-    <div class="top-center">
-        <h1>CV Spiders</h1>
-        <img class="logo_edit" src="img/logo.png" alt="LOGO CV SPIDERS">
-    </div>
 
-    <div class="social-login-choice">
-       <a href=""> <img src="img/google_icon.png" alt="GOOGLE"> </a>
-       <a href=""> <img src="img/linkedin_icon.png" alt="LINKEDIN"> </a>
-       <a href=""> <img src="img/facebook_icon.png" alt="FACEBOOK"> </a>
-
-    </div>
-
-    <div class="form-camp">
-        <div class="input-info">
-            <input class="input-info-camp" type="text" placeholder="user name or email">
-
-            <input class="input-info-camp" type="text" placeholder="password">
-        </div>
-    <div class="align-checkbox-group">
-        <div class="align-checkbox-usertype">
-            <input type="checkbox" name="biologist">
-            <p>Biologist</p>
-        </div>
-
-        <div class="align-checkbox-usertype">
-            <input type="checkbox" name="teacher">
-            <p>Teacher</p>
-        </div>
-
-        <div class="align-checkbox-usertype">
-            <input type="checkbox" name="student">
-            <p>Student</p>
-        </div>
-
-        <div class="align-checkbox-usertype">
-            <input type="checkbox" name="other">
-            <p>Other</p>
-        </div>
-    </div>
+    <div class="container">
         
-        <p>Forgot the password? <a href="">Reset password</a><p>
+        <div class="logo">
+            <i class="fa-solid fa-spider"></i>
+            <h2>CV Spiders</h2>
+        </div>
 
+        <div class="links">
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-google'></i></a>
+            <a href="#"><i class='bx bx-plus' ></i></a>
+        </div>
+        
 
+        <div class="form-camp">
+            <input type="text" placeholder="User name or email" class="input-camp" id="user-name">
+            <input type="password" placeholder="Password" class="input-camp" id="user-email">
+            <select name="Profissão" id="ocupation">
+                <option value="ocupation">Ocupation</option>
+                <option value="biologist">Biologist</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+            </select>
+            <p>Forgot the password? <a href="">Reset password</a><p>
+        </div>
+
+        <div class="btns">
+            <button class="btn" onclick="window.location.href='../Main-site/main.html'" id="btn-login">Login</button>
+            <button class="btn" onclick="window.location.href='../Main-site/main.html'" id="btn-signin">Sign In</button>
+        </div>
     </div>
-
-    <div class="buttons">
-        <button>Login</button>
-        <button>Sign In</button>
-    </div>
-</div>
 
 </body>
 </html>
