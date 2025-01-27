@@ -17,6 +17,9 @@ CV-Spiders é um projeto dedicado a catalogar e fornecer informações sobre ara
 - **Página de Rosto:**
   - `index.html`: Página inicial do projeto com links para a página principal.
   - `style.css`: Estilos CSS para a página inicial do projeto.
+- **Página de Login:**
+  - `index.html`: Página de login com links para pagina pricipal
+  - `style.css`: Estilo CSS para a página de login
 
 ## ⚙️ Funcionalidades
 

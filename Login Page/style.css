@@ -35,7 +35,7 @@ h2{
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
     background: #f3f1f2;
     width: 300px;
-    height: 430px;
+    height: 460px;
 }
 
 .container .logo{
@@ -140,7 +140,6 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
 }
 
 .container .btns .btn{
