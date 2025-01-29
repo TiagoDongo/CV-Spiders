@@ -134,6 +134,7 @@ img{
     border-radius: 50%;
     font-size: 26px;
     align-self: center;
+
 }
 
 .header-site .user-account .user-info{
@@ -372,6 +373,7 @@ img{
     font-size: 14px;
     color: var(--color-white);
     height: 200px;
+
 }
 
 .content .contribuition .contribuition-content .requirements .description::placeholder{
@@ -500,10 +502,12 @@ img{
 }
 
 @media screen and (max-width: 768px){
-    .header-site .user-account{
-        padding: 8px;
+    .header-site .logo-site > a{
+        display: none;
     }
-
+    .header-site .user-account{
+        padding: 2px;
+    }
     .header-site .user-account .user-info{
         display: none;
     }
