@@ -490,3 +490,88 @@ img{
     font-size: 14px;
     color: var(--color-1);
 }
+
+@media screen and (max-width: 992px){
+    .content .species .species-content .first-pack,
+    .content .species .species-content .second-pack.show{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-site .logo-site > a{
+        display: none;
+    }
+    .header-site .user-account{
+        padding: 2px;
+    }
+    .header-site .user-account .user-info{
+        display: none;
+    }
+    .content .spider  .spiders-content{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header-site .logo-site > a,
+    .header-site .user-account{
+        display: none;
+    }
+
+    .header-site{
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .header-site .navbar{
+        gap: 10px;
+    }
+
+    .content .species .species-content .first-pack,
+    .content .species .species-content .second-pack.show{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .contribuition .contribuition-content .requirements{
+        grid-template-columns: 1fr;
+    }
+
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .liedson-contacts,
+    .footer .tiago-contacts{
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .footer .liedson-contacts .social ,
+    .footer .tiago-contacts .social{
+        gap: 10px;
+    }
+
+    .footer .liedson-contacts .social > a,
+    .footer .tiago-contacts .social > a{
+        font-style: 16px;
+        padding: 4px;
+    }
+
+    .footer .liedson-contacts  > p,
+    .footer .tiago-contacts  > p{
+        font-style: 13px;
+    }
+
+
+    .footer .logo-uta{
+        display: none;
+    }
+
+    .footer .autor-rights{
+        font-size: 12px;
+    }
+}
