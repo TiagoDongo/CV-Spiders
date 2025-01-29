@@ -245,6 +245,7 @@ p{
 .main-content .bottom-section .left{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 5px 10px 20px 10px;
     /*border: 1px solid #fff;*/
@@ -256,7 +257,6 @@ p{
 
 .main-content .bottom-section .left > a{
     background: var(--color-winning);
-    width: 15rem;
     padding: 15px 10px;
     border-radius: var(--border-radious-1);
     cursor: pointer;
@@ -265,7 +265,7 @@ p{
     font-weight: 400;
     font-size: 16px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
 }
 
@@ -287,8 +287,7 @@ p{
 
 .contacts{
     background: var(--header-footer-background);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
     padding: 20px 20px 4px 20px;
     justify-items: center;
     align-items: center;
@@ -380,6 +379,7 @@ p{
     .main-content .bottom-section .left .status > h4{
         font-size: 20px;
     }
+
     .main-content .top-section > a,
     .main-content .bottom-section .left > a{
         padding: 8px 10px;
@@ -387,6 +387,7 @@ p{
     }
     .main-content .top-section > a > i,
     .main-content .bottom-section .left > a > i{
+
     font-size: 16px;
     }
 }
@@ -408,6 +409,7 @@ p{
     }
     .main-content .top-section > a > i,
     .main-content .bottom-section .left > a > i{
+
     font-size: 16px;
     }
 
@@ -476,8 +478,8 @@ p{
         display: none;
     }
 
+
     .main-content .bottom-section .left > a{
-        align-self: center;
     }
 
     .contacts .logo-uta{
